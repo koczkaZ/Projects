@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+     
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="budapest, Időjárás">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Időjárás</title>
+</head>
+
+<body class=body>
+    <h5>Tartalom</h5>
+    <ul type="none">
+        <li>
+            <a href="#homerseklet" style="text-decoration: none">Hőmérséklet</a>
+        </li>
+        <li>
+            <a href="#elorejelzes" style="text-decoration: none">Előrejelzés</a>
+        </li>
+        <li>
+            <a href="#orszagos" style="text-decoration: none">Országos hőmérsékletek</a>
+        </li>
+    </ul><img src=images/wind.png id=wind>
+    <h1>Budapest időjárása</h1> 
+    <hr>
+    <p>Jelenleg szikrázó napsütés és
+        <span class="type"></span> hózápor is tapasztalható.</p>
+    <h2 id=homerseklet>Hőmérséklet:</h2>
+    <h3>
+        <span class="degree" title="Aktuális hőfök"></span> &#8451, ez
+        <span class="difavdegree" title="átlagos hőföktól eltérés"></span> &#8451-kal
+        <span class="cOrw" title="cOrw"></span> az átlagosnál</h3>
+
+    <p>
+        <span class="whattowear"></span>
+    </p>
+    <h4 id=elorejelzes>Előrejelzés</h4>
+
+    <table>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+        <thead>
+            <tr>
+                <th colspan="2">Hétfő</th>
+                <th colspan="2">Kedd</th>
+                <th colspan="2">Szerda</th>
+                <th colspan="2">Csütörtök</th>
+                <th colspan="2">Péntek</th>
+            </tr>
+            <tr>
+                <td>Min</td>
+                <td>Max</td>
+                <td>Min</td>
+                <td>Max</td>
+                <td>Min</td>
+                <td>Max</td>
+                <td>Min</td>
+                <td>Max</td>
+                <td>Min</td>
+                <td>Max</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>3 &#8451</td>
+                <td>7 &#8451</td>
+                <td>9 &#8451</td>
+                <td>1 &#8451</td>
+                <td>4 &#8451</td>
+                <td>3 &#8451</td>
+                <td>7 &#8451</td>
+                <td>9 &#8451</td>
+                <td>1 &#8451</td>
+                <td>4 &#8451</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h5 id=orszagos>Országos hőmérsékletek</h5>
+    <p>Legmagasabb</p>
+    <ol type="1">
+        <li>Veszprém: 23 &#8451</li>
+        <li>Csorna: 22 &#8451</li>
+        <li>Várpalota: 20 &#8451</li>
+    </ol>
+    <p>Legalacsonyabb</p>
+    <ol type="I">
+        <li>Záhony: 2 &#8451</li>
+        <li>Eger: 4 &#8451</li>
+        <li>Fábiánháza: 5 &#8451</li>
+    </ol>
+
+    <form>
+        <label for=countries>
+            <b>Más országok</b>
+        </label>
+        <br>
+        <select id=countries name="city select">
+            <optgroup label="Európa">
+                <option name=romania>Románia</option>
+                <option name=monaco selected="selected">Monaco</option>
+                <option name="czech rep.">Cseh Köztársaság</option>
+            </optgroup>
+            <optgroup label="Ázsia">
+                <option name=kazakhstan>Kazahsztán</option>
+                <option name=japan>Japán</option>
+                <option name="sri lanka">Srí Lanka</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <script src="main.js"></script>
+    <br>
+    <br>
+    <br>
+    <h4>
+        <a href="http://idokep.hu" style="text-decoration: none" target="_blank">Valós időjárás</a>
+        <br>
+        <br>
+        <a href="mailto:info@yellowforecast.hu" subject="Rendkívüli időjárás">Írj nekünk!</a>
+        <br>
+        <a href=tel:6311454899>Hívjon bátran: +631 145 4899</a>
+        <p>A képek stílusleírása elérhető <a href=style.css target=_blank>itt</a> .css-formátumban</a></p>
+    </h4>
+</body>
+
+</html>
